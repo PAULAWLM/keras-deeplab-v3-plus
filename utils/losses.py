@@ -20,7 +20,7 @@ def categorical_crossentropy_with_logits(y_true, y_pred):
     return loss
 
 
-def focal_loss(alpha=0.1, gamma=0):   # binäre Kreuzentropie
+def focal_loss(alpha=1, gamma=0):   # binäre Kreuzentropie
     def loss(y_true, y_pred):
         y_pred = backend.softmax(y_pred)
         # compute ce loss
