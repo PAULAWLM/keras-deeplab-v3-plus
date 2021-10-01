@@ -7,7 +7,7 @@ The implementation of Data Generator based on Tensorflow.
 
 """
 from tensorflow.python.keras.preprocessing.image import Iterator
-from keras.applications import imagenet_utils
+from tensorflow.keras.applications import imagenet_utils
 from utils.utils import *
 import tensorflow as tf
 import numpy as np
